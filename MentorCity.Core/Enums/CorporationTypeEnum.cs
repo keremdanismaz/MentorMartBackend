@@ -2,10 +2,10 @@
 {
     public enum CorporationTypeEnum
     {
-        Microsoft = 1,
-        Google = 2,
-        Tesla = 3,
-        Lenovo = 4,
-        Toyota = 5
+        Vispeahen = 1,
+        Vodofone = 2,
+        SMSElotherm = 3,
+        KTUN = 4,
+        EnglishTime = 5
     }
 }

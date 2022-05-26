@@ -16,39 +16,39 @@ namespace MentorCity.Entities.Seeder
         {
            new Corporation{
                 Id=1,
-                CorporationType=Core.Enums.CorporationTypeEnum.Microsoft,
-                Name="Microsoft",
+                CorporationType=Core.Enums.CorporationTypeEnum.Vispeahen,
+                Name="Vispeahen",
                 IsActive=true,
-                CreatedDate= new DateTime(2020, 11, 01),
-                UpdatedTime=new DateTime(2020, 11, 01)
+                CreatedDate= new DateTime(2022, 03, 19),
+                UpdatedTime=new DateTime(2022, 03, 19)
            }, new Corporation{
                 Id=2,
-                CorporationType=Core.Enums.CorporationTypeEnum.Google,
-                Name="Google",
+                CorporationType=Core.Enums.CorporationTypeEnum.Vodofone,
+                Name="Vodofone Genç Gurup",
                 IsActive=true,
-                CreatedDate= new DateTime(2020, 11, 01),
-                UpdatedTime=new DateTime(2020, 11, 01)
+                CreatedDate= new DateTime(2022, 03, 19),
+                UpdatedTime=new DateTime(2022, 03, 19)
            }, new Corporation{
                 Id=3,
-                CorporationType=Core.Enums.CorporationTypeEnum.Tesla,
-                Name="Tesla",
+                CorporationType=Core.Enums.CorporationTypeEnum.SMSElotherm,
+                Name="SMS Elotherm Mekanik",
                 IsActive=true,
-                CreatedDate= new DateTime(2020, 11, 01),
-                UpdatedTime=new DateTime(2020, 11, 01)
+                CreatedDate= new DateTime(2022, 03, 19),
+                UpdatedTime=new DateTime(2022, 03, 19)
            },new Corporation{
                 Id=4,
-                CorporationType=Core.Enums.CorporationTypeEnum.Lenovo,
-                Name="Lenovo",
+                CorporationType=Core.Enums.CorporationTypeEnum.KTUN,
+                Name="Konya Teknik Üniversitesi Genç Girişimci",
                 IsActive=true,
-                CreatedDate= new DateTime(2020, 11, 01),
-                UpdatedTime=new DateTime(2020, 11, 01)
+                CreatedDate= new DateTime(2022, 03, 19),
+                UpdatedTime=new DateTime(2022, 03, 19)
            },new Corporation{
                 Id=5,
-                CorporationType=Core.Enums.CorporationTypeEnum.Toyota,
-                Name="Toyota",
+                CorporationType=Core.Enums.CorporationTypeEnum.EnglishTime,
+                Name="English Time Dil Okulları",
                 IsActive=true,
-                CreatedDate= new DateTime(2020, 11, 01),
-                UpdatedTime=new DateTime(2020, 11, 01)
+                CreatedDate= new DateTime(2022, 03, 19),
+                UpdatedTime=new DateTime(2022, 03, 19)
            }
         };
     }

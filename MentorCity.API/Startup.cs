@@ -32,24 +32,24 @@ namespace MentorCity.API
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "MentorCity.API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "MentorMart.API", Version = "v1", Description = "This is a term project. Make Your Mentoring Program Effective and Successful With The Best Mentor Mentee Matching, Mentorship Tracking, Feedback and Scheduling Tools. This project MentorMart UI for MentorMartAPI." });
             });
 
             services.AddAuthentication(options =>
             {
                 options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
             })
-        .AddCookie(options =>
-        {
-            options.AccessDeniedPath = "/accessdenied"; // Must be lowercase
-            options.LoginPath = "/account/google-login";
-        })
-      .AddGoogle(options =>
-      {
-          options.ClientId = "31232930414-s4elaa84d5rnu7rp479b4p6ds5b4vn12.apps.googleusercontent.com";
-          options.ClientSecret = "Or51wZCtNsbQRkE8uyPEFCUj";
-          options.SaveTokens = true;
-      });
+            .AddCookie(options =>
+            {
+                options.AccessDeniedPath = "/accessdenied"; // Must be lowercase
+                options.LoginPath = "/account/google-login";
+            })
+          .AddGoogle(options =>
+          {
+              options.ClientId = "31232930414-s4elaa84d5rnu7rp479b4p6ds5b4vn12.apps.googleusercontent.com";
+              options.ClientSecret = "Or51wZCtNsbQRkE8uyPEFCUj";
+              options.SaveTokens = true;
+          });
 
             services.AddCors();
 
@@ -68,7 +68,7 @@ namespace MentorCity.API
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MentorCity.API v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "MentorMart.API v1"));
             }
 
             app.UseHttpsRedirection();

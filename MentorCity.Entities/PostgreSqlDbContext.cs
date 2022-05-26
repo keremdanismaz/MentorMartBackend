@@ -71,6 +71,7 @@ namespace MentorCity.Entities
             RoleDataSeeder.Run(modelBuilder);
             MeetingLocationDataSeeder.Run(modelBuilder);
             UserDataSeeder.Run(modelBuilder);
+            CorporationInfoDataSeeder.Run(modelBuilder);
         }
 
         public DbSet<CorporationInfo> CorporationInfos { get; set; }

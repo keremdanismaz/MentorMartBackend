@@ -67,6 +67,83 @@ namespace MentorCity.Entities.Migrations
                         .IsUnique();
 
                     b.ToTable("CorporationInfos");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CorporationInfoText = "Vispeahen, 15 yılı aşkın veri ambarı, iş zekası, yazılım deneyimi bilgi birikiminin sonucu olarak ortaya çıkmış bir veri analiz platformudur. Vispeahen, sürekli artan ve büyüyen verileri stratejik kararlarda kullanılabilecek anlamlı bilgilere dönüştürür ve görselleştirir. Vispeahen, yeni grafikleri eklenti olarak eklemesi, farklı veri kaynaklarını aynı modelde görselleştirmesi, dağıtık mimaride çalışması, yüksek yük altında çalışması, görüntü dosyalarının metadatasını sorgulaması ve raporlaması ile diğer tüm görselleştirme ürünlerinden ayrılmaktadır. Vispeahen ile veriler kolay, hızlı ve estetik olarak görselleştirilebilir, dünyanın herhangi bir yerindeki herhangi bir masaüstü veya mobil cihazda, herhangi bir internet tarayıcısı ile kurulum gerektirmeden görüntülenebilir.",
+                            CorporationServiceFive = "Toplantılarının zamanını takip et. Asla kaçırma senin için seferber olacağız.",
+                            CorporationServiceFour = "Mentor bilgilerinden mentoruna bak ve mentorunu tanı.",
+                            CorporationServiceOne = "Senin için özenle hazırlanmış notları incele.",
+                            CorporationServiceSix = "Vispeahen ekibi elinden geleni yapacaktır.",
+                            CorporationServiceThree = "Sorular kısmındaki sorulara cevap ver seni tanımama yardımcı ol.",
+                            CorporationServiceTwo = "Toplantıları takip et ve toplantımızı kaçırma!",
+                            CreatedDate = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsActive = true,
+                            UpdatedTime = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CorporationInfoText = "Dünyanın en büyük teknoloji iletişimi şirketlerinden biri olan Vodafone Grubu’nun bünyesinde yer alan Vodafone Türkiye, “herkes için dijital bir gelecek inşa etme” vizyonu doğrultusunda, birey ve kurumlara sabit, mobil ve içerik hizmetleri dahil tüm telekomünikasyon teknolojilerini tek çatıda sunmaktadır. Türkiye’nin en büyük uluslararası doğrudan yatırımcılarından olan Vodafone Türkiye’nin bugüne kadar toplam yatırımları 24 milyar TL’ye ulaşmıştır. Vodafone Türkiye, 30 Haziran 2020 itibarıyla 23,6 milyon mobil müşteriye ve 1,1 milyon sabit genişbant müşterisine hizmet vermektedir. Ayrıntılı bilgi için www.vodafone.com.tr adresi ziyaret edilebilir.",
+                            CorporationServiceFive = "Toplantılarının zamanını takip et. Asla kaçırma senin için seferber olacağız.",
+                            CorporationServiceFour = "Mentor bilgilerinden mentoruna bak ve mentorunu tanı.",
+                            CorporationServiceOne = "Senin için özenle hazırlanmış notları incele.",
+                            CorporationServiceSix = "Vodofone ekibi elinden geleni yapacaktır.",
+                            CorporationServiceThree = "Sorular kısmındaki sorulara cevap ver seni tanımama yardımcı ol.",
+                            CorporationServiceTwo = "Toplantıları takip et ve toplantımızı kaçırma!",
+                            CreatedDate = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsActive = true,
+                            UpdatedTime = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserId = 2
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CorporationInfoText = "Metallerin endüktif ısıtma ve ısıl işlemlerinde uzun yıllara dayanan bilgi birikimi, SMS Elotherm'i güvenilir ortağınız yapar! Uzun ürünlerin ve yassı ürünlerin haddelenmesi, şerit ısıtma, dövme ısıtma, krank mili ve eksantrik mili sertleştirme, yüzey katmanı sertleştirme, halka sertleştirme, mil sertleştirme ve çok daha fazlası için metal ısıtma sistemleri sunuyoruz! Bu yolda eğitebileceğimiz adaylar sizlersiniz.",
+                            CorporationServiceFive = "Toplantılarının zamanını takip et. Asla kaçırma senin için seferber olacağız.",
+                            CorporationServiceFour = "Mentor bilgilerinden mentoruna bak ve mentorunu tanı.",
+                            CorporationServiceOne = "Senin için özenle hazırlanmış notları incele.",
+                            CorporationServiceSix = "SMS Elotherm ekibi elinden geleni yapacaktır.",
+                            CorporationServiceThree = "Sorular kısmındaki sorulara cevap ver seni tanımama yardımcı ol.",
+                            CorporationServiceTwo = "Toplantıları takip et ve toplantımızı kaçırma!",
+                            CreatedDate = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsActive = true,
+                            UpdatedTime = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserId = 3
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CorporationInfoText = "Mezunları evrensel değerlere bağlı, araştırmacı, üretken, paylaşımcı, özgüvenli ve yetkin olan; sürdürülebilir ve yenilikçi araştırmalarla bilim ve teknolojiyi üreten; toplumun kalkınması ve refahı için insan ve çevre odaklı çözümler sunan; alanlarında öncü araştırma faaliyetlerini tasarlayan ve gerçekleştiren bir araştırma üniversitesi olmak. KTUN sizleri eğitmek için sabırsılıkla bekliyor.",
+                            CorporationServiceFive = "Toplantılarının zamanını takip et. Asla kaçırma senin için seferber olacağız.",
+                            CorporationServiceFour = "Mentor bilgilerinden mentoruna bak ve mentorunu tanı.",
+                            CorporationServiceOne = "Senin için özenle hazırlanmış notları incele.",
+                            CorporationServiceSix = "KTUN ekibi elinden geleni yapacaktır.",
+                            CorporationServiceThree = "Sorular kısmındaki sorulara cevap ver seni tanımama yardımcı ol.",
+                            CorporationServiceTwo = "Toplantıları takip et ve toplantımızı kaçırma!",
+                            CreatedDate = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsActive = true,
+                            UpdatedTime = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserId = 4
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CorporationInfoText = "Bazı insanlar dil öğrenmek için doğal bir yeteneğe sahiptir, ancak diğerleri için yeni bir dil öğrenmek zor bir görev olabilir. Yeni bir dil öğrenmenin en iyi yolu, kendi öğrenme stilinize bağlı olarak değişir. İngilizce eğitimi günümüzde tüm dünyada olmazsa olmaz etkinliklerin arasına girmiş durumda. İngilizce eğitiminin önemi gün geçtikçe daha çok insan tarafından kavranıyor. İster okulda ister iş hayatında olun, başarıya ulaşmak için İngilizce bilmek, daha da önemlisi İngilizce konuşabilmek gerekiyor. Bu alanda başarılı olmanız için elimizden geleni yapacağız.",
+                            CorporationServiceFive = "Toplantılarının zamanını takip et. Asla kaçırma senin için seferber olacağız.",
+                            CorporationServiceFour = "Mentor bilgilerinden mentoruna bak ve mentorunu tanı.",
+                            CorporationServiceOne = "Senin için özenle hazırlanmış notları incele.",
+                            CorporationServiceSix = "English Time ekibi elinden geleni yapacaktır.",
+                            CorporationServiceThree = "Sorular kısmındaki sorulara cevap ver seni tanımama yardımcı ol.",
+                            CorporationServiceTwo = "Toplantıları takip et ve toplantımızı kaçırma!",
+                            CreatedDate = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            IsActive = true,
+                            UpdatedTime = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserId = 5
+                        });
                 });
 
             modelBuilder.Entity("MentorCity.Entities.Entities.Corporation", b =>
@@ -100,46 +177,46 @@ namespace MentorCity.Entities.Migrations
                         {
                             Id = 1,
                             CorporationType = 1,
-                            CreatedDate = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedDate = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsActive = true,
-                            Name = "Microsoft",
-                            UpdatedTime = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            Name = "Vispeahen",
+                            UpdatedTime = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             Id = 2,
                             CorporationType = 2,
-                            CreatedDate = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedDate = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsActive = true,
-                            Name = "Google",
-                            UpdatedTime = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            Name = "Vodofone Genç Gurup",
+                            UpdatedTime = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             Id = 3,
                             CorporationType = 3,
-                            CreatedDate = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedDate = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsActive = true,
-                            Name = "Tesla",
-                            UpdatedTime = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            Name = "SMS Elotherm Mekanik",
+                            UpdatedTime = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             Id = 4,
                             CorporationType = 4,
-                            CreatedDate = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedDate = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsActive = true,
-                            Name = "Lenovo",
-                            UpdatedTime = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            Name = "Konya Teknik Üniversitesi Genç Girişimci",
+                            UpdatedTime = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             Id = 5,
                             CorporationType = 5,
-                            CreatedDate = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedDate = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsActive = true,
-                            Name = "Toyota",
-                            UpdatedTime = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            Name = "English Time Dil Okulları",
+                            UpdatedTime = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });
 
@@ -173,29 +250,29 @@ namespace MentorCity.Entities.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedDate = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsActive = true,
                             MeetingLocationType = 1,
                             Name = "@Google Meet",
-                            UpdatedTime = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            UpdatedTime = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedDate = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsActive = true,
                             MeetingLocationType = 2,
                             Name = "@Zoom",
-                            UpdatedTime = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            UpdatedTime = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedDate = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsActive = true,
                             MeetingLocationType = 3,
                             Name = "@Jitsu Meet",
-                            UpdatedTime = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            UpdatedTime = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });
 
@@ -229,20 +306,20 @@ namespace MentorCity.Entities.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedDate = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsActive = true,
                             Name = "Mentor",
                             RoleType = 1,
-                            UpdatedTime = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            UpdatedTime = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedDate = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IsActive = true,
                             Name = "Mentee",
                             RoleType = 2,
-                            UpdatedTime = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
+                            UpdatedTime = new DateTime(2022, 3, 19, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });
 
@@ -482,7 +559,7 @@ namespace MentorCity.Entities.Migrations
                             IsActive = true,
                             LastName = "Candemir",
                             Mail = "ahmetCandemir@gmail.com",
-                            Password = "AhmetCan123",
+                            Password = "$2a$11$9I/cq9tUgEzPGSjdkUWj/ebv1gWt3zPUa4S9saAS0qVCoZ14BSvQa",
                             RoleId = 1,
                             UpdatedTime = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -497,7 +574,7 @@ namespace MentorCity.Entities.Migrations
                             IsActive = true,
                             LastName = "Dertlitek",
                             Mail = "muhsinDertli@gmail.com",
-                            Password = "MuhsinDertli123",
+                            Password = "$2a$11$0B7ZKbVOl7T77T996zTrPuKR6L99vsrUAydhQyqmhAdNi17XlqeTm",
                             RoleId = 1,
                             UpdatedTime = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -512,7 +589,7 @@ namespace MentorCity.Entities.Migrations
                             IsActive = true,
                             LastName = "Güler",
                             Mail = "korayGüler@gmail.com",
-                            Password = "KorayGüler123",
+                            Password = "$2a$11$182tonlckpGDHEC7FLT.d.q6iq52Bx6BFpmfK5.ZlY4LNurR0jyKO",
                             RoleId = 1,
                             UpdatedTime = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -527,7 +604,7 @@ namespace MentorCity.Entities.Migrations
                             IsActive = true,
                             LastName = "Doydu",
                             Mail = "mertDoydu@gmail.com",
-                            Password = "MertDoydu123",
+                            Password = "$2a$11$jRNonQGz2sHz.OdLxzvsGOtjrEpigSl1C.TroLoFE2TTcwPGT3eey",
                             RoleId = 1,
                             UpdatedTime = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -542,7 +619,7 @@ namespace MentorCity.Entities.Migrations
                             IsActive = true,
                             LastName = "Danışmaz",
                             Mail = "danismaz2000@gmail.com",
-                            Password = "KeremDan123",
+                            Password = "$2a$11$ViRXs3JbGGBLA4r3EtXPLej3Lh.qEmI1TGDijZ43xEJre.HuE4R1y",
                             RoleId = 1,
                             UpdatedTime = new DateTime(2020, 11, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });

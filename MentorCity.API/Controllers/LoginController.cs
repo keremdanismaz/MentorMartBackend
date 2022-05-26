@@ -22,35 +22,35 @@ namespace MentorCity.API.Controllers
             _jwtService = jwtService;
         }
 
-        //[HttpPost]
-        //public IActionResult UserLogin(LoginDto dto)
-        //{
-        //    User user = _postgreSqlDbContext.Users.FirstOrDefault(x => x.Mail == dto.Mail);
-        //    if (user == null) return BadRequest(new { message = "Bu maile ait kayıtlı kullanıcı bulunamadı." });
-        //    if (!BCrypt.Net.BCrypt.Verify(dto.Password, user.Password)) return BadRequest(new { message = "Girmiş olduğunuz şifre hatalı. Lütfen tekrar deneyin." });
+            [HttpPost]
+            public IActionResult UserLogin(LoginDto dto)
+            {
+                User user = _postgreSqlDbContext.Users.FirstOrDefault(x => x.Mail == dto.Mail && x.IsActive == true);
+                if (user == null) return Ok(new { error = "Bu maile ait kayıtlı kullanıcı bulunamadı." });
+                if (!BCrypt.Net.BCrypt.Verify(dto.Password, user.Password)) return Ok(new { error = "Girmiş olduğunuz şifre hatalı. Lütfen tekrar deneyin." });
 
-        //    var jwt = _jwtService.Generate(user.Id);
+                var jwt = _jwtService.Generate(user.Id);
 
-        //    Response.Cookies.Append("jwt", jwt, new Microsoft.AspNetCore.Http.CookieOptions
-        //    {
-        //        HttpOnly = true
-        //    });
+                Response.Cookies.Append("jwt", jwt, new Microsoft.AspNetCore.Http.CookieOptions
+                {
+                    Path = "http://localhost:3000",
+                });
 
-        //    return Ok(new
-        //    {
-        //        message = "Hoşgeldiniz Sayın MentorCity Kullanıcısı."
-        //    });
-        //}
+                return Ok(new
+                {
+                    message = jwt
+                });
+            }
 
         [HttpGet("user")]
         public IActionResult ReturnUser()
         {
             try
             {
-                var jwt = Request.Cookies["jwt"];
-                var token = _jwtService.Verify(jwt);
+                HttpContext.Request.Headers.TryGetValue("Authorization", out var tokenHeaders);
+                var token = _jwtService.Verify(tokenHeaders);
                 int userId = int.Parse(token.Issuer);
-                var user = _postgreSqlDbContext.Users.FirstOrDefault(x => x.Id == userId);
+                var user = _postgreSqlDbContext.Users.FirstOrDefault(x => x.Id == userId && x.IsActive == true);
                 return Ok(user);
             }
             catch (Exception)
@@ -59,13 +59,13 @@ namespace MentorCity.API.Controllers
             }
         }
 
-        [HttpPost("logout")]
+        [HttpGet("logout")]
         public IActionResult Logout()
         {
             Response.Cookies.Delete("jwt");
             return Ok(new
             {
-                message = "Tekrar Görüşmek Üzere MentorCity Kullanıcısı :)"
+                message = "Tekrar Görüşmek Üzere MentorMart Kullanıcısı :)"
             });
         }
     }

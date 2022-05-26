@@ -19,15 +19,15 @@ namespace MentorCity.Entities.Seeder
                 RoleType=Core.Enums.RoleTypeEnum.Mentor,
                 Name="Mentor",
                 IsActive=true,
-                CreatedDate= new DateTime(2020, 11, 01),
-                UpdatedTime=new DateTime(2020, 11, 01)
+                CreatedDate= new DateTime(2022, 03, 19),
+                UpdatedTime=new DateTime(2022, 03, 19)
            }, new Role{
                 Id=2,
                 RoleType=Core.Enums.RoleTypeEnum.Mentee,
                 Name="Mentee",
                 IsActive=true,
-                CreatedDate= new DateTime(2020, 11, 01),
-                UpdatedTime=new DateTime(2020, 11, 01)
+                CreatedDate= new DateTime(2022, 03, 19),
+                UpdatedTime=new DateTime(2022, 03, 19)
            }
         };
     }

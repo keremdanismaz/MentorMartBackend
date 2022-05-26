@@ -22,22 +22,22 @@ namespace MentorCity.Entities.Seeder
                 MeetingLocationType=Core.Enums.MeetingLocationTypeEnum.GoogleMeet,
                 Name="@Google Meet",
                 IsActive=true,
-                CreatedDate= new DateTime(2020, 11, 01),
-                UpdatedTime=new DateTime(2020, 11, 01)
+                CreatedDate= new DateTime(2022, 03, 19),
+                UpdatedTime=new DateTime(2022, 03, 19)
            }, new MeetingLocation{
                 Id=2,
                 MeetingLocationType=Core.Enums.MeetingLocationTypeEnum.Zoom,
                 Name="@Zoom",
                 IsActive=true,
-                CreatedDate= new DateTime(2020, 11, 01),
-                UpdatedTime=new DateTime(2020, 11, 01)
+                CreatedDate= new DateTime(2022, 03, 19),
+                UpdatedTime=new DateTime(2022, 03, 19)
            }, new MeetingLocation{
                 Id=3,
                 MeetingLocationType=Core.Enums.MeetingLocationTypeEnum.JitsuMeet,
                 Name="@Jitsu Meet",
                 IsActive=true,
-                CreatedDate= new DateTime(2020, 11, 01),
-                UpdatedTime=new DateTime(2020, 11, 01)
+                CreatedDate= new DateTime(2022, 03, 19),
+                UpdatedTime=new DateTime(2022, 03, 19)
            }
         };
     }
